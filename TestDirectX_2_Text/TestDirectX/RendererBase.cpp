@@ -69,4 +69,6 @@ void RendererBase::CreateDeviceDependentResources()
 void RendererBase::ReleaseDeviceDependentResources()
 {
 	m_textBrush.Reset();
+	m_textLayout.Reset();
+	m_textFormat.Reset();
 }
