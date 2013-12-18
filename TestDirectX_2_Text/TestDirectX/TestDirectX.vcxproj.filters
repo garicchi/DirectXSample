@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>af809bd5-cb31-4b5b-9b9e-150f48f55ecb</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>b3d94c4d-056b-4b78-ad47-6a8ad4c4ede9</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="コンテンツ">
+      <UniqueIdentifier>3b2e8314-891a-4d0d-8b0e-9fa6057d18c8</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="Common\DirectXHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Sample3DSceneRenderer.h">
+      <Filter>コンテンツ</Filter>
+    </ClInclude>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="aa">
+      <UniqueIdentifier>{b6a48384-f356-4280-8ba3-db937e3a67a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Content\SamplePixelShader.hlsl" />
+    <FxCompile Include="Content\SampleVertexShader.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="DeviceResources.cpp" />
+    <ClCompile Include="TestDirectXMain.cpp" />
+    <ClCompile Include="Content\SampleFpsTextRenderer.cpp" />
+    <ClCompile Include="Content\Sample3DSceneRenderer.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="RendererBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="DeviceResources.h" />
+    <ClInclude Include="TestDirectXMain.h" />
+    <ClInclude Include="Content\SampleFpsTextRenderer.h" />
+    <ClInclude Include="Content\ShaderStructures.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="RendererBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestDirectX_TemporaryKey.pfx" />
+  </ItemGroup>
+</Project>
