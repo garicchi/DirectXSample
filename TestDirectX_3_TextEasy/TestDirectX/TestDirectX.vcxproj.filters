@@ -17,9 +17,6 @@
     <ClInclude Include="Common\StepTimer.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="Content\Sample3DSceneRenderer.h">
-      <Filter>コンテンツ</Filter>
-    </ClInclude>
     <Image Include="Assets\Logo.png">
       <Filter>Assets</Filter>
     </Image>
@@ -32,20 +29,11 @@
     <Image Include="Assets\SplashScreen.png">
       <Filter>Assets</Filter>
     </Image>
-    <Filter Include="aa">
-      <UniqueIdentifier>{b6a48384-f356-4280-8ba3-db937e3a67a0}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <FxCompile Include="Content\SamplePixelShader.hlsl" />
-    <FxCompile Include="Content\SampleVertexShader.hlsl" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="DeviceResources.cpp" />
     <ClCompile Include="TestDirectXMain.cpp" />
-    <ClCompile Include="Content\SampleFpsTextRenderer.cpp" />
-    <ClCompile Include="Content\Sample3DSceneRenderer.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="RendererBase.cpp" />
     <ClCompile Include="Utility\DrawableText.cpp" />
@@ -54,8 +42,6 @@
     <ClInclude Include="App.h" />
     <ClInclude Include="DeviceResources.h" />
     <ClInclude Include="TestDirectXMain.h" />
-    <ClInclude Include="Content\SampleFpsTextRenderer.h" />
-    <ClInclude Include="Content\ShaderStructures.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="RendererBase.h" />
     <ClInclude Include="Utility\DrawableText.h" />

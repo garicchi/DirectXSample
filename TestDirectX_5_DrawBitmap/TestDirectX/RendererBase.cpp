@@ -98,6 +98,10 @@ void RendererBase::CreateDeviceDependentResources()
 		),
 		&m_bitmap
 		);
+
+	//リソースの解放
+	wicBitmapDecoder.Reset();
+	wicFormatConverter.Reset();
 	
 }
 

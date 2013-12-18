@@ -32,7 +32,6 @@ void RendererBase::Render()
 	context->DrawRectangle(
 		m_rectSize,m_rectBrush.Get(),2.0f,0);
 		
-	
 	context->EndDraw();	//描画終了
 	
 }

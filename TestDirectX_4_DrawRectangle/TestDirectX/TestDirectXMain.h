@@ -2,7 +2,6 @@
 
 #include "Common\StepTimer.h"
 #include "DeviceResources.h"
-#include "Content\Sample3DSceneRenderer.h"
 #include "RendererBase.h"
 
 // Direct2D および 3D コンテンツを画面上で描画します。
