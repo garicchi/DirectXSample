@@ -3,6 +3,7 @@
 #include <string>
 #include "DeviceResources.h"
 #include "Common/StepTimer.h"
+#include "LoadableBitmap.h"
 
 
 
@@ -22,8 +23,6 @@ namespace TestDirectX
 		// デバイス リソース
 		std::shared_ptr<DeviceResources> m_deviceResources;
 
-		// Bitmapが入るリソース
-		Microsoft::WRL::ComPtr<ID2D1Bitmap>    m_bitmap;
-
+		shared_ptr<LoadableBitmap> m_lBitmap;
 	};
 }

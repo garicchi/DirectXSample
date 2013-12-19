@@ -4,12 +4,13 @@
 
 using namespace TestDirectX;
 using namespace D2D1;
+using namespace Platform;
 
 //レンダラークラスのコンストラクタ 変数の初期化やリソースの確保などをします
 RendererBase::RendererBase(const std::shared_ptr<DeviceResources>& deviceResources) :
 m_deviceResources(deviceResources)
 {
-	m_drawableText = new DrawableText(L"さむい", Point2F(100.0f, 100.0f), 60.0f, ColorF(ColorF::DarkOrange), L"segoe UI", m_deviceResources);
+	m_drawableText = make_shared<DrawableText>(L"さむい", Point2F(100.0f, 100.0f), 60.0f, ColorF(ColorF::DarkOrange), L"segoe UI", m_deviceResources);
 	//リソース確保
 	CreateDeviceDependentResources();
 }

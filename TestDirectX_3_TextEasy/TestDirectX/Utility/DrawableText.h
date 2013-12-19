@@ -10,7 +10,7 @@ using namespace Microsoft::WRL;
 namespace TestDirectX{
 	class DrawableText{
 	public:
-		DrawableText(wstring text, D2D1_POINT_2F position, float fontSize, ColorF color, WCHAR* font, shared_ptr<DeviceResources> deviceResources);
+		DrawableText(wstring text, D2D1_POINT_2F position, float fontSize, ColorF color, wstring font, shared_ptr<DeviceResources> deviceResources);
 		void CreateResources();
 		void RelearseResources();
 
@@ -25,6 +25,6 @@ namespace TestDirectX{
 		shared_ptr<DeviceResources> m_deviceResources;
 		ColorF m_color;
 		float m_fontSize;
-		WCHAR* m_fontName;
+		wstring m_fontName;
 	};
 }

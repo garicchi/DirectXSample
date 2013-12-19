@@ -3,7 +3,7 @@
 
 using namespace TestDirectX;
 
-DrawableText::DrawableText(wstring text, D2D1_POINT_2F position, float fontSize, ColorF color, WCHAR* fontName, shared_ptr<DeviceResources> deviceResources) 
+DrawableText::DrawableText(wstring text, D2D1_POINT_2F position, float fontSize, ColorF color, wstring fontName, shared_ptr<DeviceResources> deviceResources) 
 :m_text(text),m_position(position),m_color(color),m_fontSize(fontSize),m_fontName(fontName), m_deviceResources(deviceResources){
 	
 }
@@ -17,7 +17,7 @@ void DrawableText::CreateResources(){
 
 	//テキストに使用するフォーマットを確保します
 	m_deviceResources->GetDWriteFactory()->CreateTextFormat(
-	    m_fontName,
+	    m_fontName.c_str(),
 		nullptr,
 		DWRITE_FONT_WEIGHT_LIGHT,
 		DWRITE_FONT_STYLE_NORMAL,

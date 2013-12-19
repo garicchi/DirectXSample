@@ -4,18 +4,28 @@
 #include "DeviceResources.h"
 #include "Common/StepTimer.h"
 
-namespace TestDirectX{
+using namespace std;
+
+namespace TestDirectX
+{
 
 	class LoadableBitmap
 	{
 	public:
-		LoadableBitmap(std::shared_ptr<DeviceResources>& deviceResources, Platform::String^ relativePath);
+		LoadableBitmap(shared_ptr<DeviceResources> deviceResources, Platform::String^ relativePath,D2D1_RECT_F drawRect);
+		void LoadResources();
+		void ReleaseResources();
 
-	protected:
-		std::shared_ptr<DeviceResources> m_deviceResources;
+		D2D1_RECT_F m_drawRect;
 
 		// BitmapÇ™ì¸ÇÈÉäÉ\Å[ÉX
 		Microsoft::WRL::ComPtr<ID2D1Bitmap> m_bitmap;
+
+		Platform::String^ m_relativePath;
+	protected:
+		shared_ptr<DeviceResources> m_deviceResources;
+
+		
 	};
 
 }

@@ -24,7 +24,7 @@ namespace TestDirectX
 		// デバイス リソース
 		shared_ptr<DeviceResources> m_deviceResources;
 
-	    DrawableText* m_drawableText;
+	    shared_ptr<DrawableText> m_drawableText;
 
 	};
 }
